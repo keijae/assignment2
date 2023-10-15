@@ -1,0 +1,72 @@
+/*Name: Kim Gallego; Student Number: 8772343*/
+
+body{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    font: normal 12px/1.5 sans-serif;
+    padding: 1px;
+}
+.headerfooter{
+border: 1.5px solid blue;
+border-radius: 15px;
+padding: 5px;
+margin: auto;
+text-align: center;
+}
+footer{
+clear: both;
+}
+h1{
+color:  rgb(7, 7, 102);
+font-variant:small-caps;
+text-align: left;
+}
+h2{
+    color:  rgb(7, 7, 102);
+    font-variant:small-caps;
+    text-align: left;
+}
+footer p{
+color: gray;
+text-align: left;
+}
+main{
+    float: left;
+    width: 67%;
+    margin: auto;
+    padding: auto;
+}
+aside{
+    float: right;
+    width: 33%;
+    margin:auto;
+    padding: auto;  
+}
+aside h2{
+    text-align: center;
+}
+.mainimg{
+    border: 5px solid royalblue;
+}
+figcaption{
+    font: bold;
+    font-variant: small-caps;
+}
+q{
+    font: 14px italic;
+    font-family: cursive;
+}
+ul li{
+list-style-type: none;
+line-height: 2em;
+text-align: left;
+padding-left: 100px;
+}
+ul a{
+    text-decoration: none;
+    color: fuchsia;
+}
+a:hover{
+    color: blue;
+}
