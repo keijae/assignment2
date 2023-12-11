@@ -1,0 +1,23 @@
+form{
+    border: 0.1em solid rgb(136, 31, 118);
+    border-radius: 0.1em;
+    padding: 1em;
+    background-color: rgb(223, 220, 214);
+}
+input[type=text], input[type=email], input[type=submit], select, option{
+    display: block;
+    width: 50%;
+    height: 2em;
+}
+select, option, label, legend, input[type=submit]{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+textarea{
+    display: block;
+    width: 50%;
+}
+fieldset{
+    border: none;
+}

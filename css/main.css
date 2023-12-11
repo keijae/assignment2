@@ -1,72 +1,218 @@
 /*Name: Kim Gallego; Student Number: 8772343*/
-
+html{
+    font : normal normal normal 1em/1.5 Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 241, 241);
+}
+container{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr;
+}
 body{
-    width: 100%;
-    max-width: 1200px;
+    width: 100vw;
     margin: auto;
-    font: normal 12px/1.5 sans-serif;
-    padding: 1px;
+    column-gap: 1em;
+    row-gap: 1em;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 1fr;
 }
-.headerfooter{
-border: 1.5px solid blue;
-border-radius: 15px;
-padding: 5px;
-margin: auto;
-text-align: center;
-}
-footer{
-clear: both;
-}
-h1{
-color:  rgb(7, 7, 102);
-font-variant:small-caps;
-text-align: left;
-}
-h2{
-    color:  rgb(7, 7, 102);
-    font-variant:small-caps;
-    text-align: left;
-}
-footer p{
-color: gray;
-text-align: left;
+.structural{
+    margin: 1em;
+    padding: 1em;
+
 }
 main{
-    float: left;
-    width: 67%;
-    margin: auto;
-    padding: auto;
+    padding: 0.1em;
+    margin: 0.1em;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+p{
+    display: inline;
+}
+header, footer{
+    border: 0.1em solid rgb(92, 86, 78);
+    background-image: linear-gradient(to left,rgb(143, 33, 137),rgb(197, 87, 192),rgb(175, 99, 0), rgb(194, 110, 0), rgb(173, 118, 15),rgb(206, 190, 180),rgb(173, 118, 15),rgb(194, 110, 0),rgb(175, 99, 0),rgb(197, 87, 192),rgb(143, 33, 137),rgb(129, 66, 126));
+    width: 100vw;
+}
+header{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    align-content: center;
+}
+nav{
+    height: auto;
+    width: 100vw;
+    margin: 1rem;
+    border: 0.2em solid rgb(194, 87, 60);
+    background-color: rgb(238, 229, 211);
+    padding: 1em;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 aside{
-    float: right;
-    width: 33%;
     margin:auto;
-    padding: auto;  
+    padding: auto;
+    background: rgb(182, 51, 142) url("../images/mitski12.webp") left top / cover;
+    background-size: 300%;
+    height: 165vh;
+    width: 20vw;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
 }
 aside h2{
     text-align: center;
 }
-.mainimg{
-    border: 5px solid royalblue;
+a:hover{
+    color: rgb(146, 35, 131);
+}
+aside ul a{
+    text-decoration: none;
+    text-align: left;
+    color:  rgb(211, 99, 24);
+}
+aside ul li{
+    margin: center;
+    line-height: 1.5;
+    list-style-type: none;
+    text-align: left;
+}
+footer{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0.5em;
+    margin: auto;
+    text-align: center;
+}
+h1{
+
+    color:  rgb(59, 3, 50);
+    font-variant:small-caps;
+    text-align: center;
+}
+h2{
+    color:  rgb(211, 99, 24);
+    font-variant:small-caps;
+    text-align: left;
+}
+footer p{
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+nav a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(146, 35, 131);
+    text-decoration: none;
+    text-align: center;
+    flex: 100% 1 1;
+    padding: 2em;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav>ul>li{
+    display: inline-block;
+    position: relative;
+    padding: 2em;
+}
+#mainimg{
+    clip-path: polygon(37.15% 15.41%, 38.03% 13.4%, 40.75% 11.26%, 42.55% 9.85%, 45.82% 9.12%, 53.8% 11.28%, 59.73% 13.82%, 63.34% 17.06%, 67.05% 21.71%, 72.06% 27.96%, 74.53% 31.68%, 78.13% 36.95%, 80.03% 45.38%, 80.38% 54.64%, 83.85% 57.34%, 85.62% 61.41%, 86.51% 66.87%, 84.91% 70.16%, 91.5% 73.77%, 93.03% 78.33%, 93.17% 84.35%, 75% 100%, 25% 100%, -0.08% 84.1%, 0.85% 80.52%, 6.14% 76.3%, 16.24% 70.23%, 17.43% 69.18%, 17.01% 65.46%, 18.81% 62.81%, 19.31% 60.88%, 20.25% 59.28%, 18.6% 58.24%, 18.33% 55.09%, 20.18% 52.83%, 22.33% 51.2%, 20.59% 49.44%, 20.68% 47.26%, 21.25% 45.3%, 22.38% 43.88%, 24.07% 41.74%, 24.64% 39.63%, 25.74% 37.77%, 26.74% 33.46%, 27.02% 30.99%, 28.38% 28.84%, 28.98% 25.98%, 31.17% 22.35%, 34.51% 18.43%, 35.11% 16.78%);
+    shape-outside: polygon(37.15% 15.41%, 38.03% 13.4%, 40.75% 11.26%, 42.55% 9.85%, 45.82% 9.12%, 53.8% 11.28%, 59.73% 13.82%, 63.34% 17.06%, 67.05% 21.71%, 72.06% 27.96%, 74.53% 31.68%, 78.13% 36.95%, 80.03% 45.38%, 80.38% 54.64%, 83.85% 57.34%, 85.62% 61.41%, 86.51% 66.87%, 84.91% 70.16%, 91.5% 73.77%, 93.03% 78.33%, 93.17% 84.35%, 75% 100%, 25% 100%, -0.08% 84.1%, 0.85% 80.52%, 6.14% 76.3%, 16.24% 70.23%, 17.43% 69.18%, 17.01% 65.46%, 18.81% 62.81%, 19.31% 60.88%, 20.25% 59.28%, 18.6% 58.24%, 18.33% 55.09%, 20.18% 52.83%, 22.33% 51.2%, 20.59% 49.44%, 20.68% 47.26%, 21.25% 45.3%, 22.38% 43.88%, 24.07% 41.74%, 24.64% 39.63%, 25.74% 37.77%, 26.74% 33.46%, 27.02% 30.99%, 28.38% 28.84%, 28.98% 25.98%, 31.17% 22.35%, 34.51% 18.43%, 35.11% 16.78%);
+    shape-margin: 2em;
+    float: left;
+    width: 20vw;
+    height: auto;
 }
 figcaption{
     font: bold;
     font-variant: small-caps;
 }
 q{
-    font: 14px italic;
-    font-family: cursive;
+    font: 1.2rem italic;
+    font-family: Arial, Helvetica, sans-serif;
 }
-ul li{
-list-style-type: none;
-line-height: 2em;
-text-align: left;
-padding-left: 100px;
+nav ul li ul {
+    display: none;
+    width: 15%;
+	position: fixed;
+	z-index: 999;
+	text-align: left;
+	background-color:  rgb(146, 35, 131);
+    box-shadow: 0 0 0.5em  rgb(146, 35, 131);
 }
-ul a{
-    text-decoration: none;
-    color: fuchsia;
+nav ul li:hover ul{
+    display: block;
 }
-a:hover{
-    color: blue;
+nav ul li ul li a{
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    display: block;
+}
+nav ul li ul li:hover a:hover{
+    color: rgb(146, 35, 131);
+    background-color: rgb(255, 255, 255);
+}
+nav a:hover{
+    color: rgb(255, 145, 0);
+}
+table, tr, th, td{
+border : 0.1em solid rgb(146, 35, 131);
+}
+table{
+width: 100%;
+border-collapse: collapse;
+overflow: hidden;
+}
+thead th{
+background-color: rgb(238, 229, 211);
+}
+tbody td, tbody th{
+padding : 0.5em;
+position: relative;
+z-index: 1;
+}
+@media (max-width: 900px){
+    html{
+        background-color: black;
+        color: white;
+    }
+	body{
+		font-size: 12px;
+	}
+	aside{
+		background: rgba(0, 0, 0, 0) url(../images/mitski11.webp);
+		color: #ff7300;
+	}
+    thead th{
+        background-color: rgb(109, 13, 96);
+    }
+
+}
+@media (max-width: 600px){
+	html{
+		font-size: 12px;
+        background-color: white;
+	}
+	container{
+		font-size: 14px;
+		display:block
+	}
+	
 }

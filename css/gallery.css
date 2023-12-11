@@ -1,0 +1,50 @@
+.grid-item-img{
+    width: 20vw;
+    height: 35vh;
+    border: 0.2em solid rgb(201, 114, 43);
+    display: block;
+}
+#gallery{
+    display: grid;
+    gap: 0.1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1em;
+    justify-items: center;
+    align-content: top;
+}
+#img1{
+    clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
+    shape-margin: 1rem;
+}
+#img2{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    shape-margin: 1rem;
+}
+#img3{
+    clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
+    shape-margin: 1rem;
+}
+#img4{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    shape-margin: 1rem;
+}
+#img5{
+    clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
+    shape-margin: 1rem;
+}
+#img6{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    shape-margin: 1rem;
+}
+#img7{
+    clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
+    shape-margin: 1rem;
+}
+#img8{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    shape-margin: 1rem;
+}
+#img9{
+    clip-path: polygon(30% 0%, 50% 15%, 70% 0%, 90% 10%, 100% 35%, 80% 70%, 50% 100%, 20% 70%, 0% 35%, 10% 10%);
+    shape-margin: 1rem;
+}
